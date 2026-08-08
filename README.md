@@ -29,7 +29,7 @@ Storyden — это платформа для управления сообще�
 docker run -p 8000:8000 ghcr.io/southclaws/storyden
 ```
 
-"Скриншот экземпляра Storyden" (home/public/2025_app_screenshot_viewport.png)
+![Скриншот экземпляра Storyden](home/public/2025_app_screenshot_viewport.png)
 
 ## Релизы и версии
 
