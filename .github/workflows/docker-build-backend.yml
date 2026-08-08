@@ -10,7 +10,7 @@ on:
 env:
   REGISTRY: ghcr.io
   DOCKERFILE: ./docker/api/Dockerfile
-  IMAGE_NAME: southclaws/storyden
+  IMAGE_NAME: hemonyss/storyden-ru
   IMAGE_KIND: backend
 
 permissions:
