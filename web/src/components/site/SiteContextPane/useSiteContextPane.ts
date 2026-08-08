@@ -21,8 +21,8 @@ export type Props = {
 };
 
 export const FormSchema = z.object({
-  title: z.string().min(1, "Please write a title."),
-  description: z.string().min(1, "Please write a short description."),
+  title: z.string().min(1, "Пожалуйста, напишите заголовок."),
+  description: z.string().min(1, "Пожалуйста, напишите краткое описание."),
   content: z.string().optional(),
 });
 export type Form = z.infer<typeof FormSchema>;
@@ -67,8 +67,8 @@ export function useSiteContextPane({ session, initialSettings }: Props) {
       },
       {
         promiseToast: {
-          loading: "Saving settings...",
-          success: "Settings saved",
+          loading: "Сохранение настроек...",
+          success: "Настройки сохранены",
         },
         cleanup: async () => {
           await revalidate();

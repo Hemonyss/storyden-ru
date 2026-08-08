@@ -57,7 +57,7 @@ export function SiteContextPane(props: Props) {
           height={32}
           title={
             isEditingSettings
-              ? "You can change your community's icon in the admin settings page."
+              ? "Изменить значок своего сообщества можно на странице настроек администратора."
               : undefined
           }
         />

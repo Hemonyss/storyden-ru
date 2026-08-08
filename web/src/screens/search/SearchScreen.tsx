@@ -42,7 +42,7 @@ export function SearchScreen(props: Props) {
           borderRightRadius="none"
           type="search"
           background="bg.default"
-          placeholder={`Search...`}
+          placeholder={`Поиск...`}
           _focus={{
             // NOTE: This disables the default focus behaviour styles for inputs.
             boxShadow: "none" as any, // TODO: Fix types at Park-UI or Panda level
@@ -85,21 +85,21 @@ export function SearchScreen(props: Props) {
           name="kind"
           items={[
             {
-              label: "Threads",
-              description: "Include discussion threads in the search.",
+              label: "Темы",
+              description: "Включите темы обсуждений в поиск.",
               icon: <DiscussionIcon />,
               value: DatagraphItemKind.thread,
             },
             {
-              label: "Replies",
+              label: "Ответы",
               description:
-                "Include replies to discussion threads in the search.",
+                "Включайте в поиск ответы на обсуждения.",
               icon: <ReplyIcon />,
               value: DatagraphItemKind.reply,
             },
             {
-              label: "Library",
-              description: "Include library pages in the search.",
+              label: "Библиотеки",
+              description: "Включите страницы библиотеки в поиск.",
               icon: <LibraryIcon />,
               value: DatagraphItemKind.node,
             },
@@ -120,7 +120,7 @@ export function SearchScreen(props: Props) {
             onQuery={handlers.handleQueryAuthors}
             queryResults={filters.authorsResults}
             queryError={filters.authorsError}
-            inputPlaceholder="Authors..."
+            inputPlaceholder="Авторы..."
             size="sm"
             triggerProps={{
               width: "full",
@@ -136,7 +136,7 @@ export function SearchScreen(props: Props) {
               onQuery={handlers.handleQueryCategories}
               queryResults={filters.categoriesResults}
               queryError={filters.categoriesError}
-              inputPlaceholder="Categories..."
+              inputPlaceholder="Категории..."
               size="sm"
               triggerProps={{
                 width: "full",
@@ -153,7 +153,7 @@ export function SearchScreen(props: Props) {
               onQuery={handlers.handleQueryTags}
               queryResults={filters.tagsResults}
               queryError={filters.tagsError}
-              inputPlaceholder="Tags..."
+              inputPlaceholder="Теги..."
               size="sm"
               triggerProps={{
                 width: "full",
@@ -182,9 +182,9 @@ export function SearchScreen(props: Props) {
         <EmptyState hideContributionLabel>
           {query
             ? results && page > results?.total_pages
-              ? "You've gone past the last page! Nothing to see here."
-              : "No search results."
-            : "Go forth, seek far and wide."}
+              ? "Вы перешли на последнюю страницу! Здесь ничего интересного."
+              : "Результаты поиска отсутствуют."
+            : "Идите вперед, ищите повсюду."}
         </EmptyState>
       )}
     </styled.form>

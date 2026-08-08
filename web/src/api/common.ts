@@ -31,7 +31,7 @@ const OAuthErrorSchema = z.object({
 
 type OAuthError = z.infer<typeof OAuthErrorSchema>;
 
-const genericErrorMessage = `An unexpected error occurred.`;
+const genericErrorMessage = `Произошла непредвиденная ошибка..`;
 
 export class RequestError extends Error {
   public status: number;
@@ -118,7 +118,7 @@ function normaliseRequestError(e: unknown): ProblemDetails {
 
   return {
     trace_id: "unknown",
-    title: "An unexpected error occurred.",
+    title: "Произошла непредвиденная ошибка..",
     detail: "unknown error",
   };
 }

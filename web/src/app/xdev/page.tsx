@@ -617,7 +617,7 @@ export default function Page() {
                       borderLeftColor="border.destructive"
                     >
                       <Text size="sm" color="fg.destructive">
-                        Error: Something went wrong
+                        Error: Что-то пошло не так.
                       </Text>
                     </Box>
                     <Box

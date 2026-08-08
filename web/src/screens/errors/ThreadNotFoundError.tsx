@@ -7,9 +7,9 @@ export function ThreadNotFoundError() {
   return (
     <VStack p="4" h="dvh" justify="center">
       <VStack maxW="sm" minH="60" gap="8">
-        <UnreadyBanner error="The link to this thread did not lead anywhere." />
+        <UnreadyBanner error="Ссылка на эту страницу никуда не вела." />
         <LinkButton variant="subtle" href="/">
-          Home
+          Главная
         </LinkButton>
       </VStack>
     </VStack>

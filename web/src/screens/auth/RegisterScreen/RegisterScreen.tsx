@@ -23,10 +23,9 @@ export async function RegisterScreen({
   if (isInviteOnly && !invitationID) {
     return (
       <VStack textAlign="center">
-        <styled.h1 fontWeight="bold">Registration is invite-only.</styled.h1>
+        <styled.h1 fontWeight="bold">Регистрация осуществляется только по приглашению.</styled.h1>
         <styled.p color="fg.muted" textWrap="balance">
-          Ask a community member or administrator for an invitation link to
-          join.
+          Обратитесь к участнику сообщества или администратору за ссылкой-приглашением для присоединения.
         </styled.p>
       </VStack>
     );
@@ -37,10 +36,10 @@ export async function RegisterScreen({
     return (
       <VStack textAlign="center">
         <styled.h1 fontWeight="bold">
-          Registration is currently closed.
+          Регистрация в данный момент закрыта.
         </styled.h1>
         <styled.p color="fg.muted" textWrap="balance">
-          This site has closed public registration of accounts.
+          публичная регистрация аккаунтов закрыта.
         </styled.p>
       </VStack>
     );

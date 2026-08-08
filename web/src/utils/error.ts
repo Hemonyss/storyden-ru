@@ -1,6 +1,6 @@
 import { RequestError, parseProblemDetails } from "@/api/common";
 
-const ErrUnexpected = "An unexpected error occurred";
+const ErrUnexpected = "Произошла непредвиденная ошибка.";
 
 /**
  * Derives an end-user message from an error/exception value.

@@ -7,9 +7,9 @@ export function GenericNotFoundError() {
   return (
     <VStack p="4" h="dvh" justify="center">
       <VStack maxW="sm" minH="60" gap="8">
-        <UnreadyBanner error="The link to this page did not lead anywhere." />
+        <UnreadyBanner error="Ссылка на эту страницу никуда не вела." />
         <LinkButton variant="subtle" href="/">
-          Go back to the home page
+          Вернуться на главную
         </LinkButton>
       </VStack>
     </VStack>

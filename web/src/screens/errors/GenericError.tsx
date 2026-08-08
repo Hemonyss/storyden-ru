@@ -22,7 +22,7 @@ export function GenericError({
   return (
     <VStack p="4" h="dvh" justify="center">
       <VStack maxW="sm" minH="60" gap="8">
-        <UnreadyBanner error={message ?? "An unexpected error occurred."} />
+        <UnreadyBanner error={message ?? "Произошла непредвиденная ошибка."} />
         <HStack>
           {!isHome && (
             <LinkButton variant="subtle" href="/">

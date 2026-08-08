@@ -142,7 +142,7 @@ function InvitationModalContent({
       <LStack gap="6">
         <LStack gap="2">
           <styled.p color="fg.muted">
-            Something went wrong while creating the invitation.
+            Что-то пошло не так. while creating the invitation.
           </styled.p>
           <styled.p color="fg.error" fontSize="sm">
             {invitation.message}
