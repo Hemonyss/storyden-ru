@@ -19,11 +19,10 @@ export function AuthMethodSettings() {
   return (
     <CardBox className={lstack()} gap="4">
       <LStack>
-        <Heading size="md">Authentication methods</Heading>
+        <Heading size="md">Способы входа</Heading>
         <p>
-          We recommend you add more than one method of authentication to your
-          account. This will help you recover your account if you lose access to
-          one of your devices.
+          Мы рекомендуем использовать больше способов входа. 
+          Это поможет востановить аккаунт в случае утери одного из них
         </p>
       </LStack>
 

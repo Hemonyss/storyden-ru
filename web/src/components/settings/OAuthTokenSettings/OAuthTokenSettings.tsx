@@ -36,19 +36,19 @@ export function OAuthTokenSettings({ tokens, clients }: Props) {
       <LStack gap="8">
         <CardBox className={lstack()} gap="6">
           <LStack w="full">
-            <Heading size="md">OAuth clients</Heading>
+            <Heading size="md">OAuth-клиенты</Heading>
             <p>
-              Create OAuth clients for integrations you own. Each client can
-              only request the permission scopes selected here.
+              Создавайте OAuth-клиенты для принадлежащих вам интеграций. Каждый клиент может
+              только запрашивать те области разрешений, которые выбраны здесь.
             </p>
           </LStack>
 
           <LStack>
             <WStack alignItems="center" color="fg.muted">
-              <styled.p>{clients.length} clients.</styled.p>
+              <styled.p>{clients.length} клиентов.</styled.p>
               <Button size="xs" variant="subtle" onClick={createModal.onOpen}>
                 <AddIcon />
-                New
+                Создать
               </Button>
             </WStack>
 
@@ -58,8 +58,8 @@ export function OAuthTokenSettings({ tokens, clients }: Props) {
 
         <CardBox className={lstack()} gap="6">
           <LStack>
-            <Heading size="md">Authorised applications</Heading>
-            <p>Applications you have authorised to access this site.</p>
+            <Heading size="md">Авторизованые приложения</Heading>
+            <p>Приложения, которым вы разрешили доступ к этому сайту.</p>
           </LStack>
 
           <OAuthTokenItemList tokens={tokens} />

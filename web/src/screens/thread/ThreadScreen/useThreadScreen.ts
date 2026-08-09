@@ -140,8 +140,8 @@ export function useThreadScreen({
       },
       {
         promiseToast: {
-          loading: "Saving...",
-          success: "Saved!",
+          loading: "Сохранение...",
+          success: "Сохранено!",
         },
         cleanup: async () => {
           await mutate();
@@ -158,8 +158,8 @@ export function useThreadScreen({
       },
       {
         promiseToast: {
-          loading: "Accepting...",
-          success: "Thread accepted!",
+          loading: "Одобрение...",
+          success: "Тема одобрена!",
         },
         cleanup: async () => {
           await revalidate();
@@ -176,7 +176,7 @@ export function useThreadScreen({
     await handle(
       async () => {
         await withUndo({
-          message: "Thread deleted",
+          message: "Тема удалена",
           duration: 5000,
           toastId: `thread-${thread.id}`,
           action: async () => {

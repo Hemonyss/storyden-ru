@@ -27,7 +27,7 @@ export function ThreadIndexView(props: Props) {
           borderRight="none"
           borderRightRadius="none"
           type="search"
-          placeholder="Search discussions"
+          placeholder="Поиск дисскусий"
           defaultValue={props.query}
           {...form.register("q")}
         />
@@ -49,7 +49,7 @@ export function ThreadIndexView(props: Props) {
           type="submit"
           width="min"
         >
-          Search
+          Поиск
         </Button>
       </styled.form>
 

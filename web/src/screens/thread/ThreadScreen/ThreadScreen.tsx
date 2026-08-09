@@ -81,10 +81,10 @@ export function ThreadScreen(props: Props) {
                     type="button"
                     onClick={handlers.handleDiscardChanges}
                   >
-                    Discard
+                    Отменить
                   </CancelAction>
                   <SaveAction type="submit" disabled={isEmpty}>
-                    Save
+                    Сохранить
                   </SaveAction>
                 </>
               )}

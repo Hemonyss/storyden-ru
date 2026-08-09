@@ -75,20 +75,20 @@ export function ThreadMenu(props: Props) {
 
               <Menu.Item value="copy-link" onClick={handlers.handleCopyLink}>
                 <HStack gap="1">
-                  <LinkIcon /> Copy link
+                  <LinkIcon /> Скопировать ссылку
                 </HStack>
               </Menu.Item>
 
               {isSharingEnabled && (
                 <Menu.Item value="share" onClick={handlers.handleShare}>
                   <HStack gap="1">
-                    <ShareIcon /> Share
+                    <ShareIcon /> Поделиться
                   </HStack>
                 </Menu.Item>
               )}
 
               <ReportPostMenuItem
-                menuLabel="Report thread"
+                menuLabel="Пожаловаться"
                 targetKind={DatagraphItemKind.thread}
                 targetId={thread.id}
                 author={thread.author}
@@ -99,7 +99,7 @@ export function ThreadMenu(props: Props) {
               {canPinThread && !isThreadPinned && (
                 <Menu.Item value="pin" onClick={handlers.handlePinThread}>
                   <HStack gap="1">
-                    <PinIcon /> Pin thread
+                    <PinIcon /> Закрепить
                   </HStack>
                 </Menu.Item>
               )}
@@ -107,7 +107,7 @@ export function ThreadMenu(props: Props) {
               {canPinThread && isThreadPinned && (
                 <Menu.Item value="unpin" onClick={handlers.handleUnpinThread}>
                   <HStack gap="1">
-                    <PinOffIcon /> Unpin thread
+                    <PinOffIcon /> Открепить
                   </HStack>
                 </Menu.Item>
               )}
@@ -115,7 +115,7 @@ export function ThreadMenu(props: Props) {
               {isEditingEnabled && (
                 <Menu.Item value="edit" onClick={handlers.handleEdit}>
                   <HStack gap="1">
-                    <EditIcon /> Edit
+                    <EditIcon /> Редактировать
                   </HStack>
                 </Menu.Item>
               )}
@@ -132,7 +132,7 @@ export function ThreadMenu(props: Props) {
                       closeOnSelect={false}
                       onClick={handlers.handleConfirmDelete}
                     >
-                      Are you sure?
+                      Вы уверены?
                     </Menu.Item>
 
                     <Menu.Item
@@ -154,7 +154,7 @@ export function ThreadMenu(props: Props) {
                     onClick={handlers.handleConfirmDelete}
                   >
                     <HStack gap="1">
-                      <DeleteIcon /> Delete
+                      <DeleteIcon /> Удалить
                     </HStack>
                   </Menu.Item>
                 ))}

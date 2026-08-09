@@ -28,13 +28,12 @@ export function AccessKeysSettings({ keys }: Props) {
     <>
       <CardBox className={lstack()} gap="8">
         <LStack>
-          <Heading size="md">Access keys</Heading>
+          <Heading size="md">Ключи доступа</Heading>
 
           <p>
-            Access keys allow you to authenticate API requests. They share the
-            same permissions as your account. If your account receives new
-            roles, your access keys will inherit the permissions assigned to
-            those roles.
+            Ключи доступа позволяют аутентифицировать запросы к API.
+            Они обладают теми же правами доступа, что и ваша учетная запись.
+            Если вашей учетной записи будут присвоены новые роли, ваши ключи доступа унаследуют права доступа, назначенные этим ролям.
           </p>
         </LStack>
 
@@ -42,14 +41,14 @@ export function AccessKeysSettings({ keys }: Props) {
           <WStack alignItems="center" color="fg.muted">
             {hasInactive ? (
               <styled.p>
-                {totalKeys} access keys, {totalActiveKeys} active.
+                {totalKeys} ключей доступа, {totalActiveKeys} активных.
               </styled.p>
             ) : (
-              <styled.p>{keys.length} access keys.</styled.p>
+              <styled.p>{keys.length} ключи доступа</styled.p>
             )}
             <Button size="xs" variant="subtle" onClick={createModal.onOpen}>
               <AddIcon />
-              New
+              Создать
             </Button>
           </WStack>
 
@@ -71,7 +70,7 @@ function AccessKeyItemList({ keys }: Props) {
   if (keys.length === 0) {
     return (
       <p style={{ color: "var(--colors-gray-500)", fontStyle: "italic" }}>
-        No access keys created yet.
+        Ключи доступа пока не созданы.
       </p>
     );
   }
@@ -122,14 +121,14 @@ function AccessKeyItem({ accessKey, onRevoke }: AccessKeyItemProps) {
                     bgColor="bg.destructive"
                     onClick={handleConfirmAction}
                   >
-                    Confirm Revoke
+                    Подтвердить Отозвать
                   </Button>
                   <Button
                     size="xs"
                     variant="outline"
                     onClick={handleCancelAction}
                   >
-                    Cancel
+                    Отозвать
                   </Button>
                 </>
               ) : (
@@ -139,7 +138,7 @@ function AccessKeyItem({ accessKey, onRevoke }: AccessKeyItemProps) {
                   bgColor="bg.destructive"
                   onClick={handleConfirmAction}
                 >
-                  Revoke
+                  Подтвердить
                 </Button>
               )}
             </HStack>
@@ -150,7 +149,7 @@ function AccessKeyItem({ accessKey, onRevoke }: AccessKeyItemProps) {
 
         <WStack flexWrap="wrap">
           <styled.p fontSize="xs">
-            Created: <time>{formatDate(accessKey.createdAt, "PPpp")}</time>
+            Создан: <time>{formatDate(accessKey.createdAt, "PPpp")}</time>
           </styled.p>
 
           {accessKey.expires_at && (

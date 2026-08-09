@@ -50,27 +50,26 @@ export function EmailSettings(props: Props) {
       <LStack>
         <Heading size="md">Email settings</Heading>
         <p>
-          Manage your email addresses here. You can add multiple email addresses
-          and use them to log in to your account. Emails are also used for
-          newsletters, notifications and other communications.
+          Управляйте своими EMAIL-адресами тут. Вы можете добавить несколько адресов и использовать их для входа в аккаунт.
+          Почта будет использоваться для отправки новостей, сообщений и другой информации.
         </p>
       </LStack>
 
       <LStack>
         <WStack>
-          <Heading size="sm">Email addresses</Heading>
+          <Heading size="sm">EMAIL-адреса</Heading>
           <Button
             size="xs"
             variant="subtle"
             onClick={handlers.handleStartNewEmail}
           >
-            <AddIcon /> new email address
+            <AddIcon /> новый адрес
           </Button>
         </WStack>
 
         {data.emails.length === 0 ? (
           <styled.p color="fg.muted">
-            You do not have any email addresses associated with your account.
+            К вашей учетной записи не привязано ни одного адреса электронной почты.
           </styled.p>
         ) : (
           data.emails.map((email) => <EmailCard key={email.id} email={email} />)

@@ -32,14 +32,14 @@ export function MemberInterfaceSettings(props: Props) {
     >
       <CardBox className={lstack()}>
         <WStack>
-          <Heading size="md">Interface settings</Heading>
+          <Heading size="md">Настройки интерфейса</Heading>
           <Button type="submit" loading={formState.isSubmitting}>
-            Save
+            Сохранить
           </Button>
         </WStack>
 
         <FormControl>
-          <FormLabel>Text editor style</FormLabel>
+          <FormLabel>Стиль редактора текста</FormLabel>
           <RadioGroupField
             control={control}
             name="editorMode"
@@ -49,13 +49,13 @@ export function MemberInterfaceSettings(props: Props) {
             ]}
           />
           <FormHelperText>
-            Choose your preferred editor style for composing threads, replies
-            and pages.
+            Выберите предпочтительный стиль редактирования для создания веток обсуждений, ответов
+            и страниц.
           </FormHelperText>
         </FormControl>
 
         <FormControl>
-          <FormLabel>Sidebar default state</FormLabel>
+          <FormLabel>Состояние боковой панели по умолчанию</FormLabel>
           <RadioGroupField
             control={control}
             name="sidebarDefaultState"
@@ -65,8 +65,8 @@ export function MemberInterfaceSettings(props: Props) {
             ]}
           />
           <FormHelperText>
-            Choose your preferred default state for the sidebar when you visit
-            the site.
+            Выберите желаемое состояние боковой панели по умолчанию
+            при посещении сайта.
           </FormHelperText>
         </FormControl>
       </CardBox>

@@ -40,7 +40,7 @@ export function TagScreen(props: Props) {
         />
 
         <HStack gap="1">
-          <p>Threads and library pages tagged with</p>
+          <p>Темы и страницы библиотеки, помеченные тегом</p>
           <TagBadge tag={tag} />
         </HStack>
       </LStack>

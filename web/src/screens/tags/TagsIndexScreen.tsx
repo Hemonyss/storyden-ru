@@ -37,7 +37,7 @@ export function TagsIndexScreen(props: Props) {
         />
 
         <Text textStyle="sm">
-          Threads and library pages can be tagged with related topics.
+          Темы обсуждений и страницы библиотеки можно помечать тегами, указывающими на связанные темы.
         </Text>
       </LStack>
 

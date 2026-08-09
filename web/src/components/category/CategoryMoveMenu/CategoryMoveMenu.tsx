@@ -67,7 +67,7 @@ export function CategoryMoveMenu(props: Props) {
       <Menu.TriggerItem justifyContent="space-between">
         <HStack gap="1">
           <CategoryIcon />
-          Move
+          Переместить
         </HStack>
         <SubmenuIcon />
       </Menu.TriggerItem>
@@ -94,7 +94,7 @@ function LazyLoadedCategoryMoveMenuContent() {
     return (
       <Menu.Content minW="48" userSelect="none">
         <Menu.ItemGroup id="move-no-categories">
-          <Menu.ItemGroupLabel>No categories to move to</Menu.ItemGroupLabel>
+          <Menu.ItemGroupLabel>Нет категорий для перемещения</Menu.ItemGroupLabel>
 
           <CreateCategoryMenuItem />
         </Menu.ItemGroup>

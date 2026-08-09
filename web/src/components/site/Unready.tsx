@@ -29,7 +29,7 @@ export function Unready({ error }: Props) {
         role="status"
         aria-busy="true"
         aria-live="polite"
-        aria-label="Loading"
+        aria-label="Загрузка"
       >
         <div aria-hidden="true">
           <Spinner />
@@ -65,7 +65,7 @@ export function UnreadyBanner({ error, children }: PropsWithChildren<Props>) {
         role="status"
         aria-busy="true"
         aria-live="polite"
-        aria-label="Loading"
+        aria-label="Загрузка"
       >
         <Spinner aria-hidden="true" />
       </Center>
@@ -109,15 +109,15 @@ export function UnauthenticatedBanner({
   const canRegister = usePublicRegistration(initialSettings);
 
   return (
-    <UnreadyBanner error="Please log in to see this page.">
+    <UnreadyBanner error="Пожалуйста войдите, чтоыб видеть эту страницу">
       <HStack w="full">
         {canRegister && (
           <LinkButton w="full" size="xs" href="/register">
-            Register
+            Регистрация
           </LinkButton>
         )}
         <LinkButton w="full" size="xs" variant="outline" href="/login">
-          Login
+          Вход
         </LinkButton>
       </HStack>
     </UnreadyBanner>

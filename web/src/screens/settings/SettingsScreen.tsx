@@ -63,11 +63,11 @@ export function SettingsScreen({ initialSettings }: Props) {
       onValueChange={handleTabChange}
     >
       <Tabs.List>
-        <Tabs.Trigger value="interface">Interface</Tabs.Trigger>
-        <Tabs.Trigger value="authentication">Authentication</Tabs.Trigger>
-        {emailEnabled && <Tabs.Trigger value="email">Email</Tabs.Trigger>}
+        <Tabs.Trigger value="interface">Интерфейс</Tabs.Trigger>
+        <Tabs.Trigger value="authentication">Аунтефикация</Tabs.Trigger>
+        {emailEnabled && <Tabs.Trigger value="email">Почта</Tabs.Trigger>}
         {accessKeysEnabled && (
-          <Tabs.Trigger value="access_keys">Access keys</Tabs.Trigger>
+          <Tabs.Trigger value="access_keys">Ключи доступа</Tabs.Trigger>
         )}
         {oauthEnabled && <Tabs.Trigger value="oauth">OAuth</Tabs.Trigger>}
         <Tabs.Indicator />
